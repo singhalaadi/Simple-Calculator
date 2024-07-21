@@ -1,0 +1,207 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    animation: bg 10s ease-in-out infinite;
+    background: #f0f0f0;
+}
+
+@keyframes bg {
+    0% {
+        background: #f0f0f0;
+    }
+
+    25% {
+        background: #d0cfcf;
+    }
+
+    50% {
+        background: #a8a7a7;
+    }
+
+    75% {
+        background: #a09f9fc2;
+    }
+
+    100% {
+        background: #f0f0f0;
+    }
+}
+
+.calculator {
+    background-color: rgb(239, 236, 236);
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin: 60px auto;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+p {
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.output {
+    background-color: rgb(67, 70, 70);
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#ans {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    background-color: rgb(110, 112, 112);
+    color: white;
+    height: 50px;
+    cursor: pointer;
+}
+
+#ans::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.number {
+    background-color: rgb(196, 201, 201);
+    height: 450px;
+    max-width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btn {
+    height: 55px;
+    width: 90px;
+    margin: 5px;
+    border: black 2px solid;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+#enter {
+    background-color: rgba(118, 118, 118, 0.594);
+    text-align: center;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    .calculator {
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width:440px) {
+    .calculator {
+        width: 370px;
+    }
+
+    p {
+        font-size: 30px;
+    }
+
+    .output {
+        height: 70px;
+    }
+
+    #ans {
+        font-size: 22px;
+        height: 40px;
+    }
+
+    .number {
+        height: 450px;
+    }
+
+    .btn {
+        height: 50px;
+        width: 70px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 440px) and (min-width:355px) {
+    .calculator {
+        width: 320px;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .output {
+        height: 60px;
+    }
+
+    #ans {
+        font-size: 20px;
+        height: 30px;
+    }
+
+    .number {
+        height: 350px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 65px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 355px) and (min-width:270px) {
+    .calculator {
+        width: 260px;
+    }
+
+    p {
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .output {
+        height: 50px;
+    }
+
+    #ans {
+        font-size: 15px;
+        height: 25px;
+    }
+
+    .number {
+        height: 350px;
+    }
+
+    .btn {
+        height: 40px;
+        width: 50px;
+        font-size: 15px;
+    }
+}
